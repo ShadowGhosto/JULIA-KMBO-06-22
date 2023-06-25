@@ -1,4 +1,4 @@
-function quicksort(arr)
+function quick_sort(arr)
     if length(arr) <= 1
         return arr
     end
@@ -8,10 +8,9 @@ function quicksort(arr)
     equal = [x for x in arr if x == pivot]
     greater = [x for x in arr if x > pivot]
 
-    return vcat(quicksort(lesser), equal, quicksort(greater))
+    return vcat(quick_sort(lesser), equal, quick_sort(greater))
 end
 
-# Пример использования:
 arr = [5, 2, 9, 1, 7]
-sorted_arr = quicksort(arr)
+sorted_arr = quick_sort(arr)
 println(sorted_arr)
