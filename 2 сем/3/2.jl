@@ -1,18 +1,17 @@
-#Решето Эратосфена
-function resheto(n::Integer)
-    prime_indexes = ones(Bool, n)
-    prime_indexes[begin] = false
+function Resheto_Eratosfena(n::Integer)
+    simple_i = ones(Bool, n)
+    simple_i[begin] = false
     i = 2
-    prime_indexes[i^2:i:n] .= false 
+    simple_i[i^2:i:n] .= false 
     i=3
    
     while i <= n
-        prime_indexes[i^2:2i:n] .= false
+        simple_i[i^2:2i:n] .= false
         i+=1
-        while i <= n && prime_indexes[i] == false
+        while i <= n && simple_i[i] == false
             i+=1
         end
 
     end
-    return findall(prime_indexes)
+    return findall(simple_i)
 end
