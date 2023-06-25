@@ -1,4 +1,4 @@
-function bessel_series(order, x)
+function Bessel_(order, x)
     if order == 0
         return sin(x)/x
     elseif order == 1
