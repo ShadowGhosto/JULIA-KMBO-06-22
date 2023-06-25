@@ -1,5 +1,4 @@
-# Средне квадратическое отклонение
-function mean_mass(mass)
+function mean_dev(mass)
     T = eltype(mass)
     n = 0; s¹ = zero(T); s² = zero(T)
     for a ∈ mass
