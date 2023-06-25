@@ -1,8 +1,6 @@
-# Приведение матрицы к ступеньчатому виду
 using LinearAlgebra
-function gaussian_elimination(A)
+function Gaussian_Elim(A)
     n = size(A, 1)
-    # Forward elimination
     for k = 1:n-1
         for i = k+1:n
             factor = A[i,k] / A[k,k]
@@ -13,6 +11,5 @@ function gaussian_elimination(A)
     return A
 end
 
-
 A = [1 2 4 2; 3 5 2 11; 2 6 7 9]
-println(gaussian_elimination(A))
+println(Gaussian_Elim(A))
