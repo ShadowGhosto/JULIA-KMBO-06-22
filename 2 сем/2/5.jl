@@ -1,15 +1,15 @@
-function solve_cos_x_eq_x()
+function solve_cos_x()
     a = 0.0
     b = 1.0
-    epsilon = 1e-6
+    eps = 1e-6
     
-    while b - a > epsilon
+    while b - a > eps
         c = (a + b) / 2
-        func_val = cos(c) - c
+        func_ = cos(c) - c
         
-        if abs(func_val) < epsilon
+        if abs(func_) < eps
             return c
-        elseif func_val < 0
+        elseif func_ < 0
             a = c
         else
             b = c
