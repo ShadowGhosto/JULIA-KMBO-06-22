@@ -1,4 +1,4 @@
-function gauss_jordan_backward(A, B)
+function Gauss_backward(A, B)
     n = size(A, 1)
     X = zeros(n)
     
