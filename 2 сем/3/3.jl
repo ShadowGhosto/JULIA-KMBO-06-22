@@ -1,5 +1,4 @@
-#Факторизаиця
-function factorize(n::IntType) where IntType <: Integer
+function Factorize(n::IntType) where IntType <: Integer
     list = NamedTuple{(:div, :deg), Tuple{IntType, IntType}}[]
     for p in eratosphenes_sieve(Int(ceil(n/2)))
         k = degree(n, p) 
