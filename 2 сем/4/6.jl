@@ -1,6 +1,5 @@
-# Гаусс решение СЛАУ
 using LinearAlgebra
-function gaussian_elimination(A, b)
+function Gaussian_Elim(A, b)
     n = size(A, 1)
     println(n)
     for k = 1:n-1
@@ -24,4 +23,4 @@ end
 A = [1 2 4; 3 5 2; 2 6 7]
 b = [3; 4; 1]
 
-println(gaussian_elimination(A, b))
+println(Gaussian_Elim(A, b))
