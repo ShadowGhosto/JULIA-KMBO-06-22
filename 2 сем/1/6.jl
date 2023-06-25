@@ -1,4 +1,3 @@
-#Реализация структуры многочлен
 struct Polynom{T}
     coeffs::Vector{T}
 
@@ -10,15 +9,14 @@ struct Polynom{T}
     end
 end
 
-#p = Polynom([1, 2, 3])  # создание многочлена 1 + 2x + 3x^2
 
 import Base: +, -, *, show
 
-#Операция сложения
+#Операция +
 +(a::Polynom{T}, b::Polynom{T}) where {T<:Number} = Polynom{T}(a.coeffs + b.coeffs)
 
-#Операция вычитания
+#Операция -
 -(a::Polynom{T}, b::Polynom{T}) where {T<:Number} = Polynom{T}(a.coeffs - b.coeffs)
 
-#Унарный минус
+#Унарный -
 -(a::Polynom{T}) where {T<:Number} = Polynom{T}(-a.coeffs)
