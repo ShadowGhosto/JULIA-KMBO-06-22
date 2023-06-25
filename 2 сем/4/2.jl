@@ -1,5 +1,4 @@
-# Вычисление экспоненты с машинной точностью
-function machine_precision()
+function Machine_precision()
     eps = Float64(0.5)^52
     while (1.0 + eps) > 1.0
         eps /= 2.0
@@ -7,4 +6,4 @@ function machine_precision()
     return eps
 end
 
-println(machine_precision())
+println(Machine_precision())
