@@ -1,4 +1,3 @@
-# Генерация всех разбиений натурального числа
 function next_split!(s ::AbstractVector{Int64}, k)
     k == 1 && return (nothing, 0)
     i = k-1 
