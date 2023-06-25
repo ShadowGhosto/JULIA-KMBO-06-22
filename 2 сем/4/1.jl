@@ -1,5 +1,4 @@
-# Тейлор для экспоненты
-function taylor_exp(n::Int64, x)
+function Taylor_exp(n::Int64, x)
     
     max_coef = 1/factorial(n)
    
@@ -13,4 +12,4 @@ function taylor_exp(n::Int64, x)
     return res
 end
 
-println( taylor_exp(3, 5))
+println(Taylor_exp(3, 5))
