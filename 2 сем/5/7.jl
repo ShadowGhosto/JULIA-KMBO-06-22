@@ -1,4 +1,4 @@
-function counting_sort(arr)
+function Counting_sort(arr)
     min_value = minimum(arr)
     max_value = maximum(arr)
     count = zeros(Int, max_value - min_value + 1)
@@ -15,7 +15,6 @@ function counting_sort(arr)
     return vcat(sorted_arr...)
 end
 
-# Пример использования
 arr = [5, 2, 9, 5, 2, 3]
-sorted_arr = counting_sort(arr)
+sorted_arr = Counting_sort(arr)
 println(sorted_arr)
