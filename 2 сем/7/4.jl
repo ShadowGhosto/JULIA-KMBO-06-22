@@ -1,4 +1,3 @@
-# Генерация всех k-элементных подмножеств
 function next_indicator!(indicator::AbstractVector{Bool}, k)
     @assert(k <= n)
     i = lastindex(indicator)
