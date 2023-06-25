@@ -1,16 +1,15 @@
-#Алгоритм быстрого возведения в степень
-function fastpow(a, n)
-    k=n
-    p=a
+function Fast_pow(a, n)
+    s=n
+    r=a
     t=1
  
-    while k>0
-        if iseven(k)
-            k /= 2 
-            p *= p
+    while s>0
+        if iseven(s)
+            s /= 2 
+            r *= r
         else
-            k -= 1 
-            t *= p 
+            s -= 1 
+            t *= r
         end
     end
     return t
