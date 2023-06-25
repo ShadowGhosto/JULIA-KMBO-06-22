@@ -1,5 +1,4 @@
-#Является ли число n простым
-function isPrime(n)
+function simple_(n)
 
     for i in 2:sqrt(n)
         if n % i == 0
