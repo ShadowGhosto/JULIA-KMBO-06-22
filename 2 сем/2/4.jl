@@ -1,7 +1,6 @@
-#Поиск решения уравнения f(x) = 0 методом деления отрезка пополам
-function bisection(f::Function, a, b, epsilon)
+function bisection1(f::Function, a, b, eps)
     f_a = f(a)
-    while (b - a > epsilon)
+    while (b - a > eps)
         t = (a + b)/2
         f_t = f(t)
         if (f_t == 0)
@@ -15,9 +14,8 @@ function bisection(f::Function, a, b, epsilon)
     return (a+b) / 2
 end
 
-#f(x)=0
 function f(x)
     return x * x - 3 * x
 end
 
-print(bisection(f, -1, 2, 0.01))
+print(bisection1(f, -1, 2, 0.01))
