@@ -1,13 +1,12 @@
-#Считаем log(a,b)
-function log2(n)
-    logValue = -1
+function log_2(n)
+    log_Value = -1
     while (n > 0)
-        logValue = logValue + 1
+        log_Value = log_Value + 1
         n = n / 2
     end
-    return logValue
+    return log_Value
 end
 
 function log(a::Int64, b::Int64)
-    return log2(b) / log2(a)
+    return log_2(b) / log_2(a)
 end
