@@ -1,4 +1,3 @@
-#n-й член Фибоначчи по формуле Бине
 function Formula_Bine(n)
     root_5 = 5 ^ 0.5
     phi = ((1 + root_5) / 2)
